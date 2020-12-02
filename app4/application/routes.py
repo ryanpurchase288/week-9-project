@@ -9,8 +9,8 @@ def app4():
   data1 = requests.get('http://app1:5000')
   if data1.text == '22 April':
     output = "You share my birthday"
-  elif 'April' in data1.text:
-    output ='You share the same month'
+  elif '22' in data1.text:
+    output ='You share the same day'
   else:
     output = "Unlucky you do not share my birthday"
   
