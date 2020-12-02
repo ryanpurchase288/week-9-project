@@ -1,5 +1,5 @@
   
-from flask import Flask, render_template, Response, redirect, url_for
+from flask import Flask, render_template, Response, redirect, url_for, request
 import random, string
 import requests
 from application import app
