@@ -6,7 +6,7 @@ from application import app
 
 @app.route('/app4', methods=['POST'])
 def app4():
-  data1 = requests.get('http://app1')
+  data1 = requests.get('http://app1:5000')
   if data1.text == '22 April':
     output = "You share my birthday"
   else:
