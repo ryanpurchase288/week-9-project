@@ -14,4 +14,4 @@ def generate():
     response2 = requests.get("http://app3:5002/day")    
     response3 = requests.post("http://app4:5003/app4",  data=response2.text+" "+response1.text ) 
     
-    return render_template('display.html',title='Home',data1=response3.text, data2=response3.text, data3=response3.text)
+    return render_template('display.html',title='Home',data1=response1.text, data2=response2.text, data3=response3.text)
