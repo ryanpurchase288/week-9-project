@@ -5,17 +5,17 @@ python3 -m venv venv
 . venv/bin/activate
 
 cd app1
-pytest --cov ./application
+python3 -m pytest --cov ./application
 cd ..
 
 cd app2
-pytest --cov ./application
+python3 -m pytest --cov ./application
 cd ..
 
 cd app3
-pytest --cov ./application 
+python3 -m pytest --cov ./application
 cd ..
 
 cd app4
-pytest --cov ./application
+python3 -m pytest --cov ./application
 cd ..
