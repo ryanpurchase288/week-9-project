@@ -12,10 +12,17 @@ class TestBase(TestCase):
 
 class TestResponse(TestBase):
    
-    def test_get(self):
-        with patch('requests.post') as g:
-            g.return_value.text = "22 April"
-                
-            response = self.client.post(url_for('app4'))
+    def test_app4(self):
+            response = self.client.post('/app4', data="22 April")
             self.assertIn(b'You share my birthday',response.data)
+            self.assertEqual(response.status_code, 200)
+
+    def test_appday(self):
+            response = self.client.post('/app4', data="22")
+            self.assertIn(b'You share the same day',response.data)
+            self.assertEqual(response.status_code, 200)
+
+    def test_appNo(self):
+            response = self.client.post('/app4', data="21 May")
+            self.assertIn(b'Unlucky you do not share my birthday',response.data)
             self.assertEqual(response.status_code, 200)
