@@ -37,5 +37,5 @@ services:
   nginx:
     image: ryanpurchase288/nginx:alpine
     ports:
-      target: 80
-      publish: 80
+     - target: 80
+       publish: 80
