@@ -40,3 +40,5 @@ services:
      - target: 80
        published: 80
        protocol: tcp
+    deploy:
+      replicas: 1
