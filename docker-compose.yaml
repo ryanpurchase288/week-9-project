@@ -34,3 +34,4 @@ services:
         protocol: tcp
     deploy:
       replicas: 1  
+ 
