@@ -36,7 +36,6 @@ services:
       replicas: 1
   nginx:
     image: ryanpurchase288/nginx:alpine
-    build: ./nginx:alpine
     ports:
      - target: 80
        published: 80
