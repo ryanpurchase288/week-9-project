@@ -38,4 +38,5 @@ services:
     image: ryanpurchase288/nginx:alpine
     ports:
      - target: 80
-       publish: 80
+       published: 80
+       protocol: tcp
