@@ -4,22 +4,22 @@ pipeline{
 	stages{
 		stage('Install Docker using ansible'){
             steps{
-                sh ". ./scripts/ansible.sh"
+                sh " ./scripts/ansible.sh"
                 	}
             	}
 		stage ('Test application'){
 			steps{
-				sh ". ./scripts/testing.sh"
+				sh " ./scripts/testing.sh"
 			} 
 		}
 		stage ('Push Docker'){
             steps{
-                sh ". ./scripts/docker.sh"
+                sh " ./scripts/docker.sh"
                         }
                 }
         stage('Deploy application'){
             steps{
-                sh ". ./scripts/deploy.sh"
+                sh " ./scripts/deploy.sh"
 
                         }
 
