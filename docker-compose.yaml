@@ -35,7 +35,7 @@ services:
     deploy:
       replicas: 1
   nginx:
-    image: ryanpurchase288/nginx:alpine
+    image: nginx:alpine
     ports:
      - target: 80
        published: 80
