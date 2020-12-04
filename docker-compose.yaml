@@ -9,8 +9,7 @@ services:
         protocol: tcp
     deploy:
       replicas: 3
-    depends_on:
-      - database
+    
        
   app2:
     image: ryanpurchase288/app2:latest      
