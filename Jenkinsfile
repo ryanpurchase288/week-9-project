@@ -2,13 +2,15 @@ pipeline{
     agent any
 
 	stages{
-		stage('Install Docker using ansible'){
-            steps{
-				slackSend botUser: true, 
+		slackSend botUser: true, 
   				channel: 'project9', 
   				color: '#00ff00', 
   				message: 'Testing Jekins with Slack', 
-  				tokenCredentialId: 'slack-token'
+				  tokenCredentialId: 'slack-token'
+		stage('Install Docker using ansible'){
+            steps{
+				
+  				
 				slackSend channel: '#project9', message: 'Started pipeline'
                 slackSend channel: '#project9', message: 'Install Ansible and Docker'
 				sh " ./scripts/ansible.sh"
