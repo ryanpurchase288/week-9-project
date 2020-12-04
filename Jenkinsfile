@@ -5,7 +5,7 @@ pipeline{
 		stage('Install Docker using ansible'){
             steps{
 				slackSend botUser: true, 
-  				channel: 'builds', 
+  				channel: 'project9', 
   				color: '#00ff00', 
   				message: 'Testing Jekins with Slack', 
   				tokenCredentialId: 'slack-token'
