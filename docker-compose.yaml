@@ -9,6 +9,8 @@ services:
         protocol: tcp
     deploy:
       replicas: 3
+    depends_on:
+      - database
        
   app2:
     image: ryanpurchase288/app2:latest      
@@ -48,7 +50,9 @@ services:
     ports:
     - target: 3306
     volumes:
-      - mysql-data:/var/lib/mysql
+    - type: volume
+      source: mysql_data
+      target: /var/lib/mysql
     environment:
       - MYSQL_ROOT_PASSWORD=test
 volumes:
