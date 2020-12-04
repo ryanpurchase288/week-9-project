@@ -47,7 +47,7 @@ services:
     build: ./database
     ports:
     - target: 3306
-     volumes:
+    volumes:
       - mysql-data:/var/lib/mysql
     environment:
       - MYSQL_ROOT_PASSWORD=test
