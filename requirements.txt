@@ -2,6 +2,7 @@ Flask
 flask-testing
 pytest
 requests
+<<<<<<< HEAD
 pytest-cov
 requests_mock
 certifi==2020.6.20
@@ -16,3 +17,6 @@ Werkzeug==1.0.1
 Flask-SQLAlchemy==2.4.4
 SQLAlchemy==1.3.19
 PyMySQL==0.10.0
+=======
+pytest-cov
+>>>>>>> parent of 49c7dc5... changed a few things

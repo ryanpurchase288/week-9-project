@@ -42,17 +42,4 @@ services:
        published: 80
        protocol: tcp
     deploy:
-      replicas: 3
-  database:
-    image: ryanpurchase288/database:latest
-    build: ./database
-    ports:
-    - target: 3306
-    volumes:
-    - type: volume
-      source: mysql_data
-      target: /var/lib/mysql
-    environment:
-      - MYSQL_ROOT_PASSWORD=test
-volumes:
-  mysql_data:
+      replicas: 1
