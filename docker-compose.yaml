@@ -8,7 +8,7 @@ services:
         published: 5000
         protocol: tcp
     deploy:
-      replicas: 3
+      replicas: 1
     
        
   app2:
@@ -18,7 +18,7 @@ services:
       - target: 5001
         protocol: tcp
     deploy:
-      replicas: 3  
+      replicas: 1  
   app3:
     image: ryanpurchase288/app3:latest
     build: ./app3
@@ -26,7 +26,7 @@ services:
       - target: 5002
         protocol: tcp
     deploy:
-      replicas: 3 
+      replicas: 1 
   app4:
     image: ryanpurchase288/app4:latest      
     build: ./app4
@@ -34,7 +34,7 @@ services:
       - target: 5003
         protocol: tcp
     deploy:
-      replicas: 3
+      replicas: 1
   nginx:
     image: nginx:alpine
     ports:
