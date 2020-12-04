@@ -47,11 +47,9 @@ services:
     build: ./database
     ports:
     - target: 3306
-    volumes:
-    - type: volume
-      source: date_data
-      target: /var/lib/mysql
+     volumes:
+      - mysql-data:/var/lib/mysql
     environment:
       - MYSQL_ROOT_PASSWORD=test
 volumes:
-  ticket_data:
+  mysql_data:
