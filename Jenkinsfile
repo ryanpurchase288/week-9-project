@@ -4,7 +4,6 @@ pipeline{
 	stages{
 		stage('Install Docker using ansible'){
             steps{
-				slackSend message: 'Deployment Started'
 				sh " ./scripts/ansible.sh"
                 	}
             	}
@@ -21,7 +20,6 @@ pipeline{
         stage('Deploy application'){
             steps{
                 sh " ./scripts/deploy.sh"
-
                         }
 
         	}
