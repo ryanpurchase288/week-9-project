@@ -82,7 +82,7 @@ For the CI Server I used Jenkins as this was new and easy to use plus it is one 
 For testing I used pytest using unittesting and mock testing as this allowed me to fully test my appplication code to work.
 I did not include an email server as I could not get it working due to time constraints but I would have used slack to act as this.
 For my artefact repositry I used Docker Hub which you can see here:
-![docker](https://github.com/ryanpurchase288/week-9-project/blob/main/images/docker.png)
+![docker](https://github.com/ryanpurchase288/week-9-project/blob/main/images/docker.PNG)
 
 This allows me to store my images in a centralised location online which I can access anywhere which is why I chose it over nexus which would rely on my VM with it on running.
 For my live enviroments I have used Google Cloud Platform using a flask framework as I deemed this to be most cost effective place to run it as I have a free credit and a 3 month free trial so this seemed the best solution for me.
