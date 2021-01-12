@@ -2,7 +2,7 @@
 
 ## Contents
 - [Brief](#brief)
-- [Risk Assessment](#risk-assessment)
+-- [Risk Assessment](#risk-assessment)
 - [Tracking](#tracking)
 - [VSC](#vsc)
 - [Architechture](#architechture)
